@@ -28,7 +28,7 @@ jobs:
           context: ./Argo-Global/src  # Path to the Dockerfile and build context
           push: true
           tags: |
-            sharonkohen/sharoncohen1:${{ github.sha }}
+            sharonkohen/sharoncohen1:latest-00
 
       - name: Logout from Docker Hub
         run: docker logout
