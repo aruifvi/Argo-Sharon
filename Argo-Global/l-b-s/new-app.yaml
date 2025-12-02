@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: app-node
+  name: sharoncohen1
   labels:
-    app: app-node
+    app: sharoncohen1
 spec:
   containers:
-    - name: app-node
+    - name: sharoncohen1
       image: sharonkohen/sharoncohen:latest-000
       ports:
         - containerPort: 3000
@@ -14,11 +14,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-node
+  name: sharoncohen1
 spec:
   type: LoadBalancer
   selector:
-    app: app-node
+    app: sharoncohen1
   ports:
     - name: http
       port: 80
